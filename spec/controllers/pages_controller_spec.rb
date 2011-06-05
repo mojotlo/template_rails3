@@ -7,6 +7,11 @@ render_views
       get 'home'
       response.should be_success
     end
+    it "should have the right title" do
+      get 'home'
+      response.should have_selector("title", 
+                            :content  => "Ruby on Rails Template | Home")
+    end
   end
 
   describe "GET 'contact'" do
@@ -14,11 +19,21 @@ render_views
       get 'contact'
       response.should be_success
     end
+    it "should have the right title" do
+      get 'contact'
+      response.should have_selector("title", 
+                            :content  => "Ruby on Rails Template | Contact")
+    end
   end
   describe "GET 'about'" do
     it "should be successful" do
       get 'about'
       response.should be_success 
+    end
+    it "should have the right title" do
+      get 'about'
+      response.should have_selector("title", 
+                            :content  => "Ruby on Rails Template | About")
     end
   end
 
