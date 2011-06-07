@@ -24,7 +24,7 @@ describe "LayoutLinks" do
     end
     it "should have the right links on the layout" do
       visit root_path
-      click_link "Abot"
+      click_link "About"
       response.should have_selector("title", :content => "About")
       click_link "Help"
       response.should have_selector("title", :content => "Help")
