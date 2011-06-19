@@ -1,1 +1,3 @@
-<%=@user.name %> <%=@user.email %>
+<h1><%=@user.name %></h1> 
+<%= image_tag @user.photo.url(:thumb), :class => "profile_pic"%>
+
