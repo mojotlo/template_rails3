@@ -1,12 +1,20 @@
 class UsersController < ApplicationController
-  def new
-    @title = "Sign up"
-  end
   def show
     @user=User.find(params[:id])
     @title=@user.name
   end
   def create
-    @user=User.create(params[:user])
+    @user=User.new(params[:user])
+    if @user.save
+      flash[:success] = "Welcome to the Rails Template!"
+      redirect_to @user
+    else 
+      @title = "Sign up"
+      render 'new'
+    end
+  end
+  def new
+    @title = "Sign up"
+    @user = User.new
   end
 end
