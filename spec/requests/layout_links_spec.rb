@@ -62,4 +62,16 @@ describe "LayoutLinks" do
                                     :content  => "Profile")
     end
   end
+  describe "FriendlyForwardings" do
+    it "should forward to the requested page after signin" do
+      user=Factory(:user)
+      visit edit_user_path(user) 
+      #the test automatically follows the redirect page to the signin page
+      fill_in "session[email]", :with  => user.email
+      fill_in "session[password]", :with  => user.password
+      click_button
+      #the test follows the redirect again, this time to user/edit
+      response.should render_template('users/edit')
+    end
+  end
 end

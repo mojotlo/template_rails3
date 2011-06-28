@@ -1,3 +1,12 @@
+GIT
+  remote: http://github.com/thoughtbot/paperclip.git
+  revision: 3695eaf302abd8da1b341529b53150710c74bf2c
+  specs:
+    paperclip (2.3.10)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -38,6 +47,7 @@ GEM
     autotest-growl (0.2.9)
     autotest-rails-pure (4.1.2)
     builder (2.1.2)
+    cocaine (0.1.0)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -53,10 +63,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    nokogiri (1.4.5)
-    paperclip (2.3.11)
-      activerecord (>= 2.3.0)
-      activesupport (>= 2.3.2)
+    nokogiri (1.4.6)
     polyglot (0.3.1)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -119,7 +126,7 @@ DEPENDENCIES
   autotest-rails-pure (= 4.1.2)
   factory_girl_rails (= 1.0)
   faker (= 0.3.1)
-  paperclip (~> 2.3)
+  paperclip!
   rails (= 3.0.9)
   rmagick
   rspec-rails (= 2.6.1)
