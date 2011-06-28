@@ -1,5 +1,30 @@
-<% form_for :user, :html => { :multipart => true } do |f| %>
-  	
+<h1>Edit user</h1>
+<%= form_for @user, :html => { :multipart => true } do |f| %>
+ <%= render 'shared/error_messages', :object  => f.object %>
+<div class="field">
+	<%=f.label :name %>
+	<%=f.text_field :name%>
+</div>
+<div class="field">
+	<%=f.label :email %>
+	<%=f.text_field :email%>
+</div>
+
+<div class="field"> 
+	<%=f.label :photo %>	
 	<%= f.file_field :photo%>
-	<%= f.submit %>
+</div>
+<div class="field">
+	<%=f.label :password %>
+	<%=f.password_field :password%>
+</div>
+<div class="field">
+	<%=f.label :password_confirmation %>
+	<%=f.password_field :password_confirmation%>
+</div>
+<div class="action">
+	<%= f.submit "Update" %>
+</div>
 <% end %>
+
+	

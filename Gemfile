@@ -3,8 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'sqlite3-ruby', '1.3.3', :require  => 'sqlite3'
 gem 'will_paginate', '3.0.pre2'
-gem 'rmagick'
-gem "paperclip", "~>2.3"
+gem 'rmagick' 
+gem "paperclip", :git  => "http://github.com/thoughtbot/paperclip.git"
 
 group :development do
   gem 'rspec-rails', '2.6.1'

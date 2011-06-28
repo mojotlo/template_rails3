@@ -12,10 +12,10 @@
 require 'digest'
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :photo,
+  :photo_file_name, :photo_file_size, :photo_content_type
   
   has_attached_file :photo,
-  :validates_attachment_presence  =>  :avatar,
   :url => "/:class/:attachment/:id/:style_:basename.:extension",
   :default_url => "/:class/:attachment/missing_:style.png",
   :styles => {
@@ -32,9 +32,10 @@ class User < ActiveRecord::Base
                     :uniqueness => {:case_sensitive  => false}#insufficient alone, requires on an index on email in the db to deal with quick changes
  validates :password,  :presence  => true,  
                        :confirmation  => true,
-                       :length  => {:within  => 6..40}
+                       :length  => {:within  => 6..40},
+                       :on  => :create
  
- before_save :encrypt_password
+ before_save :encrypt_password 
  
   def has_password?(submitted_password)
     encrypted_password==encrypt(submitted_password)
@@ -52,7 +53,7 @@ class User < ActiveRecord::Base
   private 
     def encrypt_password
       self.salt = make_salt if new_record?
-      self.encrypted_password = encrypt(password)
+      self.encrypted_password = encrypt(password) if new_record?
     end
     def encrypt (string)
       secure_hash("#{salt}--#{string}") 
