@@ -57,10 +57,10 @@ describe "LayoutLinks" do
       response.should have_selector("a", :href => signout_path,
                                           :content  => "Sign out")
     end
-    it "should have a profile link" do
-      response.should have_selector("a", :href  => user_path(@user),
-                                    :content  => "Profile")
-    end
+    #it "should have a profile link" do
+    #  response.should have_selector("a", :href  => user_path(@user),
+    #                                :content  => "Profile")
+    #end
   end
   describe "FriendlyForwardings" do
     it "should forward to the requested page after signin" do

@@ -95,6 +95,14 @@ describe User do
         end
       end
     end
+    describe "profile responses" do
+      before(:each) do
+        @user=User.create(@attr)
+      end
+      it "should respond to profile attribute" do
+        @user.should respond_to(:profile)
+      end
+    end
   end
     
 end

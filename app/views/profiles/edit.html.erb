@@ -1,0 +1,22 @@
+<h1>Edit your profile</h1>
+
+<%=form_for ([@user, @profile]), :html  => {:multipart  => true } do |f| %>
+
+<%=render "shared/error_messages", :object  => f.object%>
+
+<div class="field">
+	<%=profile_pic(:thumb)%>
+	<%=f.label :avatar, "Profile Picture" %>
+	<%=f.file_field :avatar%>
+</div>
+
+
+<div class="field">
+	<%=f.label :about %>
+	<%=f.text_area :about%>
+</div>
+
+	<div class="actions">
+		<%=f.submit "Save Profile" %>
+	</div>
+<%end%>
