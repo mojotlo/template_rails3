@@ -13,14 +13,21 @@ module ApplicationHelper
     end 
   end
   def conditional_link(display, condition, path)
-    if condition
-      @conditional_link=link_to(display, path)
-    else
-      @conditional_link=display
+    if controller.signed_in? 
+      if condition
+        @conditional_link=link_to(display, path)
+      else
+        @conditional_link=display
+      end
+    else @conditional_link=display
     end
   end
   def current_user_is_user?
-    current_user==@user
+    if controller.signed_in?
+      current_user==@user
+    else
+      return false
+    end
   end
 
 end

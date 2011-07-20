@@ -3,14 +3,20 @@
 </h1>
 
 <h3>About <%=@user.name %></h3>
-<% if @user.profile %>		
-<p><%=conditional_link(@profile.about, current_user_is_user?, edit_user_profile_path(current_user) )%></p>
-<% else %>
-<p><%=conditional_link("No information given", current_user_is_user?, edit_user_profile_path(current_user) )%></p>
+<%if current_user %>
+	<% if @user.profile %>		
+	<p><%=conditional_link(@profile.about, current_user_is_user?, edit_user_profile_path(current_user) )%></p>
+	<% else %>
+	<p><%=conditional_link("No information given", current_user_is_user?, new_user_profile_path(current_user) )%></p>
+	<%end%>
+<%else %>
+
 <% end %>
 
 <div class= "profile_pic">
-<% if @user.profile %>
-<%=conditional_link(profile_pic(:large), current_user_is_user?, edit_user_profile_path(current_user)) %>
-<% end %> 
+<%if current_user%>
+	<% if @user.profile %>
+		<%=conditional_link(profile_pic(:large), current_user_is_user?, 		edit_user_profile_path(current_user)) %>
+	<% end %> 
+<% end %>
 </div>
