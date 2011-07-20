@@ -12,18 +12,10 @@
 require 'digest'
 class User < ActiveRecord::Base
   attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation, :photo,
-  :photo_file_name, :photo_file_size, :photo_content_type
+  attr_accessible :name, :email, :password, :password_confirmation
   
-  has_attached_file :photo,
-  :url => "/:class/:attachment/:id/:style_:basename.:extension",
-  :default_url => "/:class/:attachment/missing_:style.png",
-  :styles => {
-      :thumb  => "100x100#",
-      :small  => "150x150>"
-  }
-  
-  
+  has_one :profile, :dependent  => :destroy
+    
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :name, :presence => true,
                 :length => {:maximum  => 50}
@@ -40,7 +32,7 @@ class User < ActiveRecord::Base
   def has_password?(submitted_password)
     encrypted_password==encrypt(submitted_password)
   end
-  def self.authenticate(email, submitted_password)
+  def self.authenticate(email, submitted_password)#used on sign-in
     user = find_by_email(email)
     return nil if user.nil? 
     return user if user.has_password?(submitted_password) #implicit: return nil if password mismatch

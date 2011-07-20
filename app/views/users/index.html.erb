@@ -4,7 +4,7 @@
 
 <%=@users.each do |user|%>
 <li><%=link_to user.name, user%></li>
-<li><%= image_tag user.photo.url(:thumb), :class => "profile_pic"%></li>
+<li><%= image_tag profile.photo.url(:thumb), :class => "profile_pic"%></li>
 <% end %>
 
 </ul>

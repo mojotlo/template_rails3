@@ -1,3 +1,16 @@
-<h1><%=@user.name %></h1> 
-<%= image_tag @user.photo.url(:thumb), :class => "profile_pic"%>
+<h1>
+<%=conditional_link(@user.name, current_user_is_user?, edit_user_path(current_user)) %>
+</h1>
 
+<h3>About <%=@user.name %></h3>
+<% if @user.profile %>		
+<p><%=conditional_link(@profile.about, current_user_is_user?, edit_user_profile_path(current_user) )%></p>
+<% else %>
+<p><%=conditional_link("No information given", current_user_is_user?, edit_user_profile_path(current_user) )%></p>
+<% end %>
+
+<div class= "profile_pic">
+<% if @user.profile %>
+<%=conditional_link(profile_pic(:large), current_user_is_user?, edit_user_profile_path(current_user)) %>
+<% end %> 
+</div>
