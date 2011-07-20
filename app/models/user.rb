@@ -24,8 +24,7 @@ class User < ActiveRecord::Base
                     :uniqueness => {:case_sensitive  => false}#insufficient alone, requires on an index on email in the db to deal with quick changes
  validates :password,  :presence  => true,  
                        :confirmation  => true,
-                       :length  => {:within  => 6..40},
-                       :on  => :create
+                       :length  => {:within  => 6..40}
  
  before_save :encrypt_password 
  
