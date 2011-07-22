@@ -7,7 +7,7 @@
 	<% if @user.profile %>		
 	<p><%=conditional_link(@profile.about, current_user_is_user?, edit_user_profile_path(current_user) )%></p>
 	<% else %>
-	<p><%=conditional_link("No information given", current_user_is_user?, new_user_profile_path(current_user) )%></p>
+	<p><%=conditional_link(@about_default, current_user_is_user?, new_user_profile_path(current_user) )%></p>
 	<%end%>
 <%else %>
 
@@ -15,8 +15,9 @@
 
 <div class= "profile_pic">
 <%if current_user%>
-	<% if @user.profile %>
-		<%=conditional_link(profile_pic(:large), current_user_is_user?, 		edit_user_profile_path(current_user)) %>
-	<% end %> 
+	<%=conditional_link(profile_pic(:large, "profile_pic"), current_user_is_user?, 	edit_user_profile_path(current_user)) %>
+
+<% else %>
+	<%= profile_pic(:large, "profile_pic")%>
 <% end %>
 </div>

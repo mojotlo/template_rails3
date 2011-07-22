@@ -1,4 +1,21 @@
 # == Schema Information
+# Schema version: 20110719164953
+#
+# Table name: users
+#
+#  id                 :integer         not null, primary key
+#  name               :string(255)
+#  email              :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  encrypted_password :string(255)
+#  salt               :string(255)
+#  photo_file_name    :string(255)
+#  photo_content_type :string(255)
+#  photo_file_size    :integer
+#
+
+# == Schema Information
 # Schema version: 20110606185931
 #
 # Table name: users
