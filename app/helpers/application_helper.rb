@@ -6,12 +6,15 @@ module ApplicationHelper
     if @user.profile
       @profile_pic=image_tag(@profile.avatar.url(size), :class=>css_class)
     else
-      @profile_pic=image_tag("missing_"+size.to_s+".png", :class => css_class)
+      @profile_pic=image_tag("missing_#{size}.png", :class => css_class)
     end
   end
-  def 
   def about_default
-    @about_default="No information given"
+    if @user.profile and @profile.about
+      @about_default=@profile.about
+    else
+      @about_default="No information given"
+    end
   end
   def conditional_link(display, condition, path)
     if current_user
@@ -30,5 +33,4 @@ module ApplicationHelper
       return false
     end
   end
-
 end

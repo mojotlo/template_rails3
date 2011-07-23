@@ -1,15 +1,12 @@
 class ProfilesController < ApplicationController
  before_filter :authenticate
  before_filter :has_profile?, :only  => [:new, :create]
+ before_filter :correct_user
  
- def show
-   @user=current_user
-   @profile=@user.profile
-   @user.name
- end
- def new
-   @user=current_user
 
+ def new
+    @user=User.find(params[:user_id])
+    
     @title = "Create a profile"
     @profile = @user.create_profile(params[:profile])
 
@@ -21,16 +18,16 @@ class ProfilesController < ApplicationController
  end
  def edit
    @title="Edit Profile"
-   @user=current_user
-   @profile=current_user.profile
+   @user=User.find(params[:user_id])
+   @profile=@user.profile
  end
  def index
    @title = "All users"
  end
  def update
    @title="Edit Profile"
-   @user=current_user
-    @profile=@user.profile
+   @user=User.find(params[:user_id])
+   @profile=@user.profile
     if @profile.update_attributes(params[:profile])
       flash[:success]="Profile updated successfully."
       redirect_to @user
@@ -39,4 +36,9 @@ class ProfilesController < ApplicationController
       render "edit"
     end
  end
+ private
+   def correct_user
+     @user=User.find(params[:user_id])
+     redirect_to(root_path) unless current_user?(@user)
+   end
 end

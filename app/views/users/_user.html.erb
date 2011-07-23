@@ -1,0 +1,7 @@
+<% @user = user %>
+<% @profile = @user.profile %>
+<li><%=link_to @user.name, @user%></li>
+
+<li><%=link_to about_default, @user %></li>
+
+<li><%= link_to profile_pic(:thumb, "profile_pic"), @user %></li>

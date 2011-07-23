@@ -2,20 +2,8 @@
 <%=will_paginate%>
 <ul>
 
-<%=@users.each do |user|%>
-<li><%=link_to user.name, user%></li>
+<%=render @users %>
 
-<% @user = user %>
-
-<% if @user.profile %>
-<% @profile = @user.profile %>
-<li><%=link_to @profile.about, user%></li>
-<%else %>
-<li><%=link_to @about_default, user %></li>
-<% end %>
-<li><%= link_to profile_pic(:thumb, "profile_pic"), user %></li>
-
-<% end %>
 
 </ul>
 <%=will_paginate%>

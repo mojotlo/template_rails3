@@ -7,33 +7,61 @@ describe UsersController do
     before(:each) do
       @user=Factory(:user)
     end
-    it "should be successful" do
-      get  :show, :id => @user
-      response.should be_success
-    end
-    it "should find the right user" do
-      get :show, :id => @user
-      assigns(:user).should == @user
-    end
-   it "should have a profile pic" do
-     get :show, :id  =>  @user
-     response.should have_selector("img", :class  => "profile_pic")
-   end
-    it "should include the user's name" do
-      get :show, :id  => @user
-      response.should have_selector("h1", :content  => @user.name)
-    end
-    describe "for signed in users" do
-      it "should allow one user to look at anothers profile" do
-        test_sign_in(@user)
-        @user2=Factory(:user, :email  => "example4000@example.com")
-        get :show, :id  => @user2
+    describe "for non-signed in users" do
+      it "should be successful" do
+        get  :show, :id => @user
         response.should be_success
       end
-      it "should allow a user to view their own profile" do
-        test_sign_in(@user)
+      it "should find the right user" do
+        get :show, :id => @user
+        assigns(:user).should == @user
+      end
+     it "should have a profile pic" do
+       get :show, :id  =>  @user
+       response.should have_selector("img", :class  => "profile_pic")
+     end
+      it "should include the user's name" do
         get :show, :id  => @user
-        response.should be_success
+        response.should have_selector("h1", :content  => @user.name)
+      end
+      it "should include the user's about section or a default" do
+        get :show, :id  => @user
+        response.should have_selector("p", :content  => "No information given")
+      end
+    end      
+    describe "for signed in users" do
+      describe "for one user looking at another user's profile" do
+        before (:each) do
+           test_sign_in(@user)
+          @user2=Factory(:user, :email  => "example4000@example.com")
+        end
+        it "should allow one user to look at another user" do
+          get :show, :id  => @user2
+          response.should be_success
+        end
+        it "should not have links to change the profile" do
+          get :show, :id  => @user2
+          response.should_not have_selector("p>a", :href => new_user_profile_path(@user))
+          response.should_not have_selector("p>a", :href  => edit_user_profile_path(@user))
+        end
+      end
+      describe "for a user looking at her own profile" do
+        before(:each) do
+          test_sign_in(@user)
+        end
+        it "should allow a user to view their own profile" do
+          get :show, :id  => @user
+          response.should be_success
+        end
+        it "should include links to profile/new if no profile exists" do
+          get :show, :id  => @user
+          response.should have_selector("p > a", :href  => new_user_profile_path(@user), :content => "No information given") 
+        end
+        it "should include links to profile/edit if profile exists" do
+          @profile=Factory(:profile, :user  => @user)
+          get :show, :id  => @user
+          response.should have_selector("p > a", :href  => edit_user_profile_path(@user)) 
+        end
       end
     end
   end
@@ -209,7 +237,20 @@ describe UsersController do
         @users.each do |user|
           response.should have_selector("img")
         end
-      end 
+      end
+      it "should paginate users" do
+        30.times do
+          @users << Factory(:user, :email  => Factory.next(:email)) 
+        end
+        get :index
+        response.should have_selector("div.pagination")
+        response.should have_selector("span.disabled", :content => "Previous")
+        response.should have_selector("a", :href  => "/users?page=2", 
+                                      :content => "2")
+        response.should have_selector("a", :href  => "/users?page=2", 
+                                        :content=> "Next")
+      end
+
     end  
   end
 end

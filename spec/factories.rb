@@ -11,3 +11,7 @@ Factory.define :profile do |profile|
   profile.association           :user
 end
 
+Factory.sequence :email do |n|
+  "person-#{n}@example.com"
+end
+
