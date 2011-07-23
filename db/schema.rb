@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110719164953) do
+ActiveRecord::Schema.define(:version => 20110723224446) do
 
   create_table "profiles", :force => true do |t|
     t.text     "about"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20110719164953) do
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
+    t.boolean  "admin",              :default => false
   end
 
 end
