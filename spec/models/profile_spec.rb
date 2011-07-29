@@ -5,15 +5,15 @@ describe Profile do
     @user=Factory(:user)
   end
   it "should create a new instance given valid attributes" do
-    @attr={:about=> 'value for content', :avatar => File.new(Rails.root + 'spec/fixtures/test_avatar.jpg')
-    }
+    @attr={:about=> 'value for content', :profile_avatar => File.new("#{Rails.root}/spec/fixtures/test_avatar.jpg")}
     @user.create_profile(@attr)
   end
-  before(:each) do
-    @attr={:about=> 'About me of the profile model spec'}
-  end  
+  it "should reject non-image profile pictures as invalid" do
+    #Profile.new {:profile_avatar => File.new(Rails.root + '/spec/fixtures/bad_avatar.pdf')}.should_not be_valid
+  end 
   describe "user associations" do
     before(:each) do
+      @attr={:about=> 'About me of the profile model spec'}
       @profile = @user.create_profile(@attr)
     end
     it "should have a user attribute" do

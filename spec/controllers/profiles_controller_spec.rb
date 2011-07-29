@@ -12,17 +12,25 @@ describe ProfilesController do
     end
   end
   describe "POST create" do
-    before(:each) do
-      @attr={:about  => "special friendly about"}
-    end
     describe 'success' do
       it "should create a new profile" do
         lambda do
+          @attr={:about  => "special friendly about"}
           get :new, :user_id  => @user.id
           post :create, :user_id  => @user.id, :profile  => @attr
         end.should change(Profile, :count).by(1)
       end
     end
+    describe "failure" do
+      it "should not allow non images for the file" do
+        @attr={:profile_avatar  => "#{Rails.root}/spec/fixtures/bad_avatar.pdf"}
+        get :new, :user_id  => @user.id
+        post :create, :user_id  => @user.id, :profile  => @attr
+        @user.reload
+        @profile=@user.profile
+        @profile.avatar_file_name.should be_nil
+     end  
+    end 
   end
 
   describe "Existing users" do
