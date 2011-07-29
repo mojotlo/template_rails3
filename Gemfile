@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'mail'
 gem 'rails', '3.0.9'
 gem 'sqlite3-ruby', '1.3.3', :require  => 'sqlite3'
 gem 'will_paginate', '3.0.pre2'
@@ -13,6 +14,7 @@ group :development do
 end
 
 group :test do
+  gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'rspec-rails', '2.6.1' 
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc8'

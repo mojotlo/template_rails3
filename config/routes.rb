@@ -14,7 +14,14 @@ TemplateRails3::Application.routes.draw do
   match '/signout', :to  => 'sessions#destroy'  
   
   root :to  => 'pages#home'
-  
+  match 'forgot_password', :to  => 'users#forgot_password_page', :as  => :forgot_password_page, :via  => :get
+  match 'forgot_password', :to  => 'users#forgot_password', :via  => :post
+  match 'reset_password', :to  => 'users#reset_password_page', :via  => :get  
+  match 'reset_password', :to  => 'users#reset_password', :via  => :post
+  match '/users/:id/change_password', :to  => 'users#change_password_page', :as  => :change_password_page, :via  => :get  
+  match '/users/:id/change_password', :to  => 'users#change_password', :via  => :post
+  match '/users/:id/settings', :to  => 'users#edit', :as  => :settings, :via  => :get
+  match '/users/:id/settings', :to  => 'users#edit', :via  => :post 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

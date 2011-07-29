@@ -57,10 +57,28 @@ describe "LayoutLinks" do
       response.should have_selector("a", :href => signout_path,
                                           :content  => "Sign out")
     end
-    #it "should have a profile link" do
-    #  response.should have_selector("a", :href  => user_path(@user),
-    #                                :content  => "Profile")
-    #end
+    it "should have a profile link" do
+      response.should have_selector("a", :href  => user_path(@user),
+                                    :content  => 'Profile')
+    end
+    it "should have a create profile link" do
+      response.should have_selector("a", :href  => new_user_profile_path(@user), :content  => 'Create Profile')
+    end
+    it "should have a settings link" do
+      response.should have_selector("a", :href  => settings_path(@user), :content  => 'Settings')
+    end
+    it "should have a change password link" do
+      response.should have_selector("a", :href  => change_password_page_path(@user), :content  => 'Change Password')
+    end
+    describe "when profile exists" do
+      it "should have an edit profile button" do
+        visit new_user_profile_path(@user)
+        fill_in /about/i, :with  => "Some stuff about me"
+        click_button
+        visit root_path
+        response.should have_selector("a", :href  => edit_user_profile_path(@user, @user.profile), :content  => "Edit Profile")
+      end
+    end
   end
   describe "FriendlyForwardings" do
     it "should forward to the requested page after signin" do

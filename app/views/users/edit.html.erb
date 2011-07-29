@@ -1,6 +1,6 @@
 <h1>Edit user</h1>
 <%= form_for @user, :html => { :multipart => true } do |f| %>
- <%= render 'shared/error_messages', :object  => f.object %>
+	<%= render 'shared/error_messages', :object  => f.object %>
 <div class="field">
 	<%=f.label :name %>
 	<%=f.text_field :name%>
@@ -10,18 +10,11 @@
 	<%=f.text_field :email%>
 </div>
 
-<div class="field">
-	<%=f.label :password %>
-	<%=f.password_field :password%>
-</div>
-<div class="field">
-	<%=f.label :password_confirmation %>
-	<%=f.password_field :password_confirmation%>
-</div>
 <div class="action">
 	<%= f.submit "Update" %>
 </div>
 <div class="action">
+	<%=link_to "Change password", change_password_page_path(current_user)%>
 	<%= link_to "Cancel", user_path %>
 </div>
 <% end %>
