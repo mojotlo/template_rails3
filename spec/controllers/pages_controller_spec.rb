@@ -7,7 +7,7 @@ render_views
   end
   describe "GET 'home'" do
     it "should be successful" do
-      get 'home'
+      get :home
       response.should be_success
     end
     it "should have the right title" do
@@ -40,7 +40,7 @@ render_views
     end
   end
   describe "GET 'help'" do
-    it "should be successful as Lassie" do
+    it "should be as successful as Lassie" do
       get "help"
       response.should be_success
     end

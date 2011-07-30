@@ -279,10 +279,16 @@ describe UsersController do
       end
     end
     describe "as a non-admin user" do
-      it "should protect the page" do
+      it "should protect the action" do
         test_sign_in(@user)
         delete :destroy, :id  => @user
+        response.should redirect_to(root_path)
       end
+      it "should not have a delete link at users show" do
+        test_sign_in(@user)
+        get :index
+        response.should_not have_selector("a", :content  => "delete")
+      end        
     end
     describe "as an admin user" do
       before(:each) do
@@ -297,6 +303,10 @@ describe UsersController do
       it "should redirect to users path" do
         delete :destroy, :id  => @user
         response.should redirect_to(users_path)
+      end
+      it "should have a delete link at users index" do
+        get :index
+        response.should have_selector("a", :content  => "delete")
       end
     end
   end

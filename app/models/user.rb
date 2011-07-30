@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110724192529
+# Schema version: 20110730132132
 #
 # Table name: users
 #
@@ -10,9 +10,6 @@
 #  updated_at                :datetime
 #  encrypted_password        :string(255)
 #  salt                      :string(255)
-#  photo_file_name           :string(255)
-#  photo_content_type        :string(255)
-#  photo_file_size           :integer
 #  admin                     :boolean
 #  reset_password_code       :string(255)
 #  reset_password_code_until :datetime

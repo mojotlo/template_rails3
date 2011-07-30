@@ -20923,3 +20923,535 @@ REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find
 REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
 REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"2HKJTwa", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
 REQUESTING PAGE: GET http://www.example.com/forgot_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"Some stuff about me"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/signin with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"hootyhoo"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4c3bc30 @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6338-1vamcne>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4cbe220 @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6338-1fhhzc3>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e3d218 @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6338-hauq6u>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e5fc64 @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6338-g9sr8y>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Hootyhoo", "email"=>"Hootyhoo@Hootyhoo.com", "password"=>"Hootyhoo", "password_confirmation"=>"Hootyhoo"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"", "email"=>"impossible_email"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"impossibleemail", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"LfZeDFw", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"nonsense", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"2C9pM7S", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/forgot_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"Some stuff about me"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/signin with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"hootyhoo"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e55ca0 @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6362-x4qakv>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4ca8948 @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6362-pzn7d7>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4cdb67c @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6362-1w75mu1>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e02438 @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6362-jfp4di>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Hootyhoo", "email"=>"Hootyhoo@Hootyhoo.com", "password"=>"Hootyhoo", "password_confirmation"=>"Hootyhoo"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"", "email"=>"impossible_email"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"impossibleemail", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"k7d5yXb", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"nonsense", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"SZBhFkV", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/forgot_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"Some stuff about me"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/signin with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"hootyhoo"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e4f2ec @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6395-1gz1zdg>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4cd5f9c @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6395-1oks7wp>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4cda9e8 @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6395-1kpcdr2>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e027bc @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6395-5s6afg>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Hootyhoo", "email"=>"Hootyhoo@Hootyhoo.com", "password"=>"Hootyhoo", "password_confirmation"=>"Hootyhoo"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"", "email"=>"impossible_email"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"impossibleemail", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"rRbxSgv", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"nonsense", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"Q6DbOYL", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/forgot_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"Some stuff about me"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/signin with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>"", "about"=>"hootyhoo"}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4e614ec @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6424-lrz8i>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4c10738 @content_type=nil, @original_filename="test_avatar.jpg", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/test_avatar.jpg20110730-6424-1ejwlte>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4cd9318 @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6424-1bxp82c>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/profiles/new with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/profiles/1 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "profile"=>{"avatar"=>#<Rack::Test::UploadedFile:0x4cfdf88 @content_type="application/pdf", @original_filename="bad_avatar.pdf", @tempfile=#<File:/var/folders/P6/P6DZJIZMHD44vFr9ZGc5+k+++TI/-Tmp-/bad_avatar.pdf20110730-6424-1yrdq9q>>, "about"=>""}, "commit"=>"Save Profile"} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/new"}
+REQUESTING PAGE: GET /users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/profiles/1"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Hootyhoo", "email"=>"Hootyhoo@Hootyhoo.com", "password"=>"Hootyhoo", "password_confirmation"=>"Hootyhoo"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"", "email"=>"impossible_email"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/edit with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2 with {"utf8"=>"\xE2\x9C\x93", "_method"=>"put", "user"=>{"name"=>"New Name", "email"=>"newemail@example.com"}, "commit"=>"Update"} and HTTP headers {"HTTP_REFERER"=>"/users/2/edit"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"short", "password_confirmation"=>"short", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"mhartl@example.com", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2"}
+REQUESTING PAGE: POST /users/2/change_password with {"utf8"=>"\xE2\x9C\x93", "password"=>"newpass", "password_confirmation"=>"newpass", "commit"=>"Change password"} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2 with {} and HTTP headers {"HTTP_REFERER"=>"/users/2/change_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"impossibleemail", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"wDwkqF5", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/users/2/change_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"nonsense", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET /forgot_password with {} and HTTP headers {}
+REQUESTING PAGE: POST /forgot_password with {"utf8"=>"\xE2\x9C\x93", "email_find"=>"mhartl@example.com", "commit"=>"Email temporary password"} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: GET http://www.example.com/reset_password with {} and HTTP headers {"HTTP_REFERER"=>"/forgot_password"}
+REQUESTING PAGE: POST /reset_password with {"utf8"=>"\xE2\x9C\x93", "reset_password_code"=>"UkQSawM", "commit"=>"Enter and Reset Password"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/reset_password"}
+REQUESTING PAGE: GET http://www.example.com/forgot_password with {} and HTTP headers {"HTTP_REFERER"=>"/reset_password"}

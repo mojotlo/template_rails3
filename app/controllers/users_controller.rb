@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   def create
     @user=User.new(params[:user])
     if @user.save    
-      UserMailer.registration_confirmation(@user).deliver
+      #UserMailer.registration_confirmation(@user).deliver
       sign_in(@user)
       flash[:success] = "Welcome to the Rails Template!"
       redirect_to @user
@@ -56,7 +56,7 @@ class UsersController < ApplicationController
       @generated_password=generate_password
       @user.update_attributes(:reset_password_code => @generated_password, :reset_password_code_until => 1.day.from_now)
       @user.save
-      UserMailer.forgot_password(@user).deliver
+      #UserMailer.forgot_password(@user).deliver
     flash[:success] = "A temporary password has been emailed to #{@user.email}"
     redirect_to reset_password_path
     else
