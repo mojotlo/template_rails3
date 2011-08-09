@@ -1,8 +1,9 @@
-require "faker"
+
 
 namespace :db do
   desc "Fill database with sample data"#for errors
   task :populate  => :environment do #environment allows rake access to current env and the User methods
+    require "faker"
     Rake::Task['db:reset'].invoke#resets the db
  
     admin=User.create!(:name => "Example User",

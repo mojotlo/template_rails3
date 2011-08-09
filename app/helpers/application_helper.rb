@@ -2,13 +2,16 @@ module ApplicationHelper
   def logo
     @logo=image_tag("logo.png", :alt =>"template app", :class => "round")
   end
-  def profile_pic(size, css_class=nil)
-    if @user.profile
-      @profile_pic=image_tag(@profile.avatar.url(size), :class=>css_class)
-    else
+
+  def profile_pic(size, user, css_class=nil)
+    unless user.profile
       @profile_pic=image_tag("missing_#{size}.png", :class => css_class)
+    else
+      @own_profile=user.profile
+      @profile_pic=image_tag(@own_profile.avatar.url(size), :class=>css_class)
     end
   end
+
   def about_default
     if @user.profile and @profile.about
       @about_default=@profile.about

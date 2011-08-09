@@ -13,7 +13,7 @@
 
 
 <div class= "profile_pic">
-	<%=conditional_link(profile_pic(:large, "profile_pic"), current_user_is_user?, 	edit_user_profile_path(@user)) %>
+	<%=conditional_link(profile_pic(:medium, @user, "profile_pic"), current_user_is_user?, 	edit_user_profile_path(@user)) %>
 
 </div>
 </div>

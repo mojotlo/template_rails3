@@ -1,7 +1,7 @@
 class ProfilesController < ApplicationController
  before_filter :authenticate
  before_filter :has_profile?, :only  => [:new, :create]
- before_filter :correct_user
+ before_filter :authorized_user, :only  => [:edit, :update]
  
 
  def new
@@ -21,9 +21,6 @@ class ProfilesController < ApplicationController
    @user=User.find(params[:user_id])
    @profile=@user.profile
  end
- def index
-   @title = "All users"
- end
  def update
    @title="Edit Profile"
    @user=User.find(params[:user_id])
@@ -37,8 +34,8 @@ class ProfilesController < ApplicationController
     end
  end
  private
-   def correct_user
-     @user=User.find(params[:user_id])
-     redirect_to(root_path) unless current_user?(@user)
-   end
+ def authorized_user 
+   @profile = Profile.find(params[:id])
+   redirect_to root_path unless current_user?(@profile.user)
+ end
 end

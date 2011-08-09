@@ -48,7 +48,7 @@ describe "Profiles" do
             @user.reload
             @profile=@user.profile
             @profile.avatar_file_name.should be_nil
-            response.should have_selector("img", :alt  => "Missing_large")
+            response.should have_selector("img", :alt  => "Missing_medium")
           end
         end
       end
